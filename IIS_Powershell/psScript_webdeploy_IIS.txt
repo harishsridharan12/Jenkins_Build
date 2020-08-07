@@ -1,0 +1,5 @@
+Add-PSSnapin WDeploysnapin3.0
+
+$package - "C:\temp\DemoApp.zip"
+
+Restore-WBPackage $package -Parameters @{"IIS Web Application Name"="API/Hello"}
